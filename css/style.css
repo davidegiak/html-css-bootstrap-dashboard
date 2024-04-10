@@ -1,0 +1,29 @@
+/********************COLORSS*****************/
+
+.mybg-red {
+    background-color: red;
+}
+
+.mybg-blue {
+    background-color: blue;
+}
+
+.mybg-green {
+    background-color: green;
+}
+
+.mybg-black {
+    background-color: #222;
+}
+
+/***********************MAIN*******************/
+.myside-bar {
+    height: calc(100vh - 67.667px);
+    background-color: #222;
+}
+
+@media screen and (max-width:983px) {
+    .myside-bar {
+        height: calc(100vh - 66px);
+    }
+}
