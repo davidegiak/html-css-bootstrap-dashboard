@@ -5,7 +5,7 @@
 }
 
 .mybg-blue {
-    background-color: blue;
+    background-color: #1b72e8;
 }
 
 .mybg-green {
@@ -26,4 +26,18 @@
     .myside-bar {
         height: calc(100vh - 66px);
     }
+}
+
+.my-fs-side {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.my-main {
+    height: 90vh;
+}
+
+.my-fs-main {
+    font-size: 0.8rem;
+    vertical-align: middle;
 }
