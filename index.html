@@ -53,63 +53,131 @@
     <!------------------MAIN---------------------->
     <main>
         <div class="d-flex ">
-            <div class="col-1 col-md-1 col-lg-1 d-flex align-items-center justify-content-between py-1 flex-column myside-bar">
-                <div class="col-8">
-                    <a role="button" class="my-fs-side btn btn-outline-light w-100">
+            <div class="mybackground col-1 col-md-1 col-lg-1 d-flex align-items-center justify-content-between py-1 flex-column myside-bar overflow-hidden">
+                <div>
+                    <a role="button" class="my-fs-side btn btn-dark w-100">
                         <i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline-block">home</span>    
                     </a>
-                    <a role="button" class="my-fs-side my-fs btn btn-outline-light w-100">
+                    <a role="button" class="my-fs-side my-fs btn btn-dark w-100">
                         <i class="fa-solid fa-chart-simple"></i> <span class="d-none d-lg-inline-block">stats</span>
                     </a>
-                    <a role="button" class="my-fs-side my-fs btn btn-outline-light w-100">
+                    <a role="button" class="my-fs-side my-fs btn btn-dark w-100">
                         <i class="fa-solid fa-signal"></i> <span class="d-none d-lg-inline-block">signali</span>
                     </a>
                 </div>
-                <div class="col-8">
-                    <a role="button" class="my-fs-side my-fs btn btn-outline-light w-100">
+                <div>
+                    <a role="button" class="my-fs-side my-fs btn btn-dark w-100">
                         <i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline-block">admin</span>       
                     </a>
                 </div>
             </div>
             <div class="container-fluid overflow-scroll my-main">
-               <div class="row mybg-blue p-2 m-b-2">
-                <div class="col-6">
+               <div class="row mybg-blue p-2 m-b-2 justify-content-center align-items-center">
+                <div class="col-12 col-md-4 col-lg-6">
                     <div class="d-flex align-items-baseline">
                         <h1>Boolean</h1>
-                        <span class="mybg-black badge rounded-pill text-light ">
+                        <span class="badge rounded-pill text-bg-dark text-light ">
                           <span>bellaa</span>
                         </span>
                     </div>
                     <div class="d-flex">
-                        <span class="mybg-black badge rounded-pill text-light ">
+                        <span class="badge rounded-pill text-bg-dark text-light ">
                           <span>bellaa</span>
                         </span>
-                        <span class="mybg-black badge rounded-pill text-light ">
+                        <span class="badge rounded-pill text-bg-dark text-light ">
                           <span>bellaa</span>
                         </span>
-                        <span class="mybg-black badge rounded-pill text-light ">
+                        <span class="badge rounded-pill text-bg-dark text-light ">
                           <span>bellaa</span>
                         </span>
-                        <span class="mybg-black badge rounded-pill text-light ">
+                        <span class="badge rounded-pill text-bg-dark text-light ">
                           <span>bellaa</span>
                         </span>
                     </div>
                 </div>
-                <div class="col-3 text-light">
+                <div class="col-12 col-md-4 col-lg-3 text-light">
                   <h4>studenti bla bla bla</h4>
                   <p>blablablablablablabl</p>
                 </div>
-                <div class="col-3 text-light d-flex">
+                <div class="col-12 col-md-4 col-lg-3 text-light d-flex">
                   <p>
                     nuovo studente <button type="button" class="btn btn-outline-light fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
                   </p>
-                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                      <p>Try scrolling the rest of the page to see this option in action.</p>
+                      <form>
+                        <div class="row mb3">
+                          <div class="mb3 col-12 col-lg-6">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" minlength="2" maxlength="20" required>
+                          </div>
+                          <div class="mb3 col-12 col-lg-6">
+                            <label for="last-name" class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="last-name" minlength="2" maxlength="20" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <label for="mail" class="form-label">Email</label>
+                            <div class="mb3 input-group">
+                              <span class="input-group-text" id="addon-wrapping">@</span>
+                              <input id="mail" type="text" class="form-control" placeholder="email" aria-label="Username" aria-describedby="addon-wrapping" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 col-12 col-lg-6">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="15" required>
+                          </div>                       
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <label for="mail" class="form-label">Email</label>
+                            <div class="mb3 input-group">
+                              <span class="input-group-text" id="addon-wrapping">@</span>
+                              <input id="mail" type="text" class="form-control" placeholder="email" aria-label="Username" aria-describedby="addon-wrapping" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 col-12 col-lg-6">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" maxlength="15" required>
+                          </div>                       
+                        </div>
+                        <label for="address" class="form-label">Indirizzo</label>
+                        <input type="text" id="address" class="form-control" required>
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <label for="city" class="form-label">Città</label>
+                            <input type="text" class="form-control" id="city" required>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <label for="country" class="form-label">Stato</label>
+                            <select class="form-select" aria-label="Default select example" required>
+                              <option selected>Open this select menu</option>
+                              <option value="1">ITALY</option>
+                              <option value="2">USA</option>
+                              <option value="3">CANADA</option>
+                            </select>
+                          </div>
+                          <div class="col-12 col-lg-2">
+                            <label for="cap" class="form-label">CAP</label>
+                            <input type="text" class="form-control" id="cap" minlength="5" required>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label">Foto</label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>   
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                          <label class="form-check-label" for="exampleCheck1" requaired>Seleziona per proseguire</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="button" class="btn btn-warning">Svuota</button>
+                      </form>
                     </div>
                   </div>
                 </div>        
@@ -121,215 +189,255 @@
                     <div class="card-header">
                       Featured
                     </div>                  
-                    <ul class="list-group list-group-flush container m-auto justify-content-center my-fs-main mb-3">
+                    <ul class="my-prossimeclassi list-group list-group-flush container m-auto justify-content-center my-fs-main mb-3">
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7">
+                          <div class="col-4 col-md-5 col-lg-7">
                             <h6 class="align-middle">Nome</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-4 d-md-block d-none">
                             <p class="align-middle text-center">Data inizio</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-1 col-lg-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">Stato</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">Azioni</p>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-md-2 col-lg-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-success">Done</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 d-flex justify-content-center gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-success">Done</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 d-flex justify-content-center gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-warning">Process</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 justify-content-center d-flex gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-success">Done</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 justify-content-center d-flex gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-danger">Failed</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 justify-content-center d-flex gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-success">Done</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 justify-content-center d-flex gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-danger">Failed</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 justify-content-center d-flex gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>
                       <li class="list-group-item">
                         <div class="row my-fs-main align-items-center">
-                          <div class="col-7 d-flex gap-1">
+                          <div class="col-4 col-md-5 col-lg-7 d-flex gap-1">
                             <div class="">
-                              <img src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
+                              <img class="mybg-img" src="./img/class-avatar.jpg" alt="" style="width: 1rem;">
                             </div>
                             <h6 class="align-middle">Classe 75</h6>
                           </div>
-                          <div class="col-2">
+                          <div class="col-2 d-md-block d-none">
                             <p class="align-middle text-center">15 febbraio 2024</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-1 d-md-block d-none">
                             <p class="align-middle text-center">ROI</p>
                           </div>
-                          <div class="col-1">
+                          <div class="col-4 col-md-2 col-lg-1">
                             <p class="align-middle text-center">
                               <span class="badge text-bg-success">Done</span>
                             </p>
                           </div>
-                          <div class="col-1">
-                            <p class="align-middle text-center">Azioni</p>
+                          <div class="col-4 col-md-2 col-lg-1 justify-content-center d-flex gap-1">
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-pencil"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-secondary p-1 my-fs-features">
+                              <i class="fa-solid fa-trash"></i>
+                            </a>
                           </div>
                         </div>
                       </li>

@@ -41,3 +41,30 @@
     font-size: 0.8rem;
     vertical-align: middle;
 }
+
+.mybackground {
+    background-image: url(../img/sidebar-bg.png);
+}
+
+#offcanvasScrolling {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    #offcanvasScrolling {
+        width: 60%;
+    }
+}
+
+.my-fs-features {
+    font-size: 0.8rem;
+}
+
+li:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.mybg-img {
+    
+}
