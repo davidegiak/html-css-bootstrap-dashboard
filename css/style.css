@@ -60,7 +60,7 @@
     font-size: 0.8rem;
 }
 
-li:hover {
+.list-group-item:hover {
     background-color: lightgrey;
     cursor: pointer;
 }
